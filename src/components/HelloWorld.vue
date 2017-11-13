@@ -171,13 +171,10 @@ export default {
         }
 
         function mouseUp (e) {
-          // knob.options.activeClass && knob.classList.remove(knob.options.activeClass)
           documentEvents.removeEventListener('mousemove', mouseMove)
           documentEvents.removeEventListener('mouseup', mouseUp)
           vm.$emit('changeKnob', vm.knobValue)
         }
-
-        // knob.options.activeClass && knob.classList.add(knob.options.activeClass)
 
         documentEvents.addEventListener('mousemove', mouseMove)
         documentEvents.addEventListener('mouseup', mouseUp)
@@ -197,13 +194,10 @@ export default {
         }
 
         function touchEnd () {
-          // knob.options.activeClass && knob.classList.remove(knob.options.activeClass)
           documentEvents.removeEventListener('touchmove', touchMove)
           documentEvents.removeEventListener('touchend', touchEnd)
           vm.$emit('changeKnob', vm.knobValue)
         }
-
-        // this.activeClass && knob.classList.add(knob.options.activeClass)
 
         documentEvents.addEventListener('touchmove', touchMove)
         documentEvents.addEventListener('touchend', touchEnd)

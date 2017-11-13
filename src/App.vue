@@ -1,13 +1,26 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    <knob v-model="knobValue" @changeKnob="knobChange"></knob>
 </template>
 
 <script>
+import knob from './components/HelloWorld'
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      knobValue: 100
+    }
+  },
+  components: {knob},
+  methods: {
+    knobChange (value) {
+      console.log('--1', value)
+    },
+    send () {
+      this.knobValue = 255
+      console.log(this.knobValue)
+    }
+  }
 }
 </script>
 

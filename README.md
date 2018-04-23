@@ -1,4 +1,4 @@
-# test
+# vue-knob
 
 > 下载就能用环形knob就是跟jq的那个knob差不多，我改成vue的了
 

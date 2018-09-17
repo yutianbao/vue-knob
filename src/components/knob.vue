@@ -203,7 +203,7 @@ export default {
         documentEvents.addEventListener('touchend', touchEnd)
 
         touchMove(e)
-      })
+      }, {passive: true})
     },
     xyToknobValue (x, y, offset) {
       let PI2 = 2 * Math.PI

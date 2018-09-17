@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import knob from './components/HelloWorld'
+import knob from './components/knob'
 export default {
   name: 'app',
   data () {
